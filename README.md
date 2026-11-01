@@ -14,7 +14,6 @@ A responsive, web-based digital attendance information system engineered to mode
 
 ## 📸 Application Screenshots
 
-*(Place your application screenshots inside the `screenshots/` directory)*
 
 | Teacher Dashboard (Mobile UI) | Attendance Form |
 | :---: | :---: |
