@@ -1,0 +1,31 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\User;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+
+class UserSeeder extends Seeder
+{
+    public function run(): void
+    {
+        User::updateOrCreate(
+            ['username' => 'admin_pusat'],
+            [
+                'password' => Hash::make('admin123'),
+                'nama_lengkap' => 'Administrator Utama',
+                'role' => 'admin',
+            ]
+        );
+
+        User::updateOrCreate(
+            ['username' => 'bagus1'],
+            [
+                'password' => Hash::make('password123'),
+                'nama_lengkap' => 'Bagus Setiawan, S.Pd',
+                'role' => 'guru',
+            ]
+        );
+    }
+}
